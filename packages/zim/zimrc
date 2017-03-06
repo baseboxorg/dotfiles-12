@@ -1,0 +1,29 @@
+
+#
+# Zim settings
+#
+
+# Enabled modules.
+zmodules=(\
+  completion \
+  custom \
+  directory \
+  environment \
+  fasd \
+  history \
+  history-substring-search \
+  input \
+  meta \
+  prompt \
+  syntax-highlighting \
+  utility
+)
+
+# Prompt theme.
+zprompt_theme='pure'
+
+# Terminal title format string.
+ztermtitle='%n@%m:%~'
+
+# Syntax-Highlighting.
+zhighlighters=(main brackets cursor)

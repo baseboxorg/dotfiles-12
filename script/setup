@@ -1,0 +1,18 @@
+#!/bin/zsh -ex
+
+# Install zim.
+git clone --recursive https://github.com/Eriner/zim.git $HOME/.zim
+
+# Setup rc files.
+for package in packages/*; do
+  rcup -d $package
+done
+
+# Add local gitconfig.
+git config --global include.path "$HOME/.gitconfig.local"
+
+# Set zim as the default shell.
+sudo chsh -s =zsh
+
+# Run macOS defaults.
+source macos/defaults
