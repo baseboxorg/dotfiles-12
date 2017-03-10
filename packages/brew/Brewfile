@@ -18,7 +18,3 @@ cask 'google-chrome'
 cask 'iterm2'
 cask 'skype'
 cask 'spotify'
-
-# Mac App Store.
-mas 'The Unarchiver', id: 425424353
-mas 'Twitter', id: 409789998
