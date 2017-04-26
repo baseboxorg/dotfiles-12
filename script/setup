@@ -1,23 +1,23 @@
-#!/bin/zsh -ex
+#!/bin/bash -ex
 
 # Install brew dependencies.
 brew bundle --file=packages/brew/Brewfile
 
 # Install zim.
-if [ ! -d $HOME/.zim ]; then
-  git clone --recursive https://github.com/Eriner/zim.git $HOME/.zim
+if [ ! -d "$HOME/.zim" ]; then
+  git clone --recursive https://github.com/Eriner/zim.git "$HOME/.zim"
 fi
 
 # Setup rc files.
 for package in packages/*; do
-  rcup -d $package
+  rcup -d "$package"
 done
 
 # Add local gitconfig.
 git config --global include.path "$HOME/.gitconfig.local"
 
 # Set zim as the default shell.
-sudo chsh -s $(which zsh)
+sudo chsh -s "$(which zsh)"
 
 # Run macOS defaults.
 source macos/defaults

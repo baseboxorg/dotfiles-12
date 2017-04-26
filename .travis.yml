@@ -2,6 +2,10 @@ os: osx
 
 osx_image: xcode8.3
 
+install:
+  - brew install shellcheck
+
 script:
   - rm -f ~/.zshrc
+  - shellcheck -x script/setup
   - script/setup
