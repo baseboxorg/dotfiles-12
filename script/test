@@ -1,0 +1,5 @@
+#!/usr/bin/env bats
+
+@test "should have zsh as the default shell" {
+  [ "$(dscl . -read /Users/$USER UserShell | awk '{ print $2 }')" = "/bin/zsh" ]
+}

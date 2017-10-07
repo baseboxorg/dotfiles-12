@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 ###############################################################################
 # Accessibility
@@ -143,3 +143,5 @@ defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Set dark mode.
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
+echo "Please reboot to apply all settings."

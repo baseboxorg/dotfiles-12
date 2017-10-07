@@ -1,11 +1,12 @@
 os: osx
 
-osx_image: xcode8.3
+osx_image: xcode9.1
 
 install:
-  - brew install shellcheck
+  - brew install bats shellcheck
 
 script:
   - rm -f ~/.zshrc
   - shellcheck -x script/setup
   - script/setup
+  - script/test
