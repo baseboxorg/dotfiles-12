@@ -17,7 +17,7 @@ done
 git config --global include.path "$HOME/.gitconfig.local"
 
 # Set zim as the default shell.
-sudo chsh -s "$(which zsh)"
+sudo chsh -s "$(which zsh)" "$USER"
 
 # Run macOS defaults.
 source macos/defaults
