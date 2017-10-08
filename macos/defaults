@@ -119,8 +119,17 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Safari
 ###############################################################################
 
+# Safari opens with all windows from last session.
+defaults write com.apple.Safari AlwaysRestoreSessionAtLaunch -bool true
+
 # Disable opening ‘safe’ files automatically after downloading.
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Ask websites not to track me.
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+
+# Show develop menu.
+defaults write com.apple.Safari IncludeDevelopMenu -int 1
 
 ###############################################################################
 # Spotlight
