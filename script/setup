@@ -21,3 +21,4 @@ sudo chsh -s "$(which zsh)" "$USER"
 
 # Run macOS defaults.
 source macos/defaults
+source macos/iterm

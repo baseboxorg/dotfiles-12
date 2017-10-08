@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Enable Session Restoration.
+defaults write com.googlecode.iterm2 KillJobsInServersOnQuit -bool false
+defaults write com.googlecode.iterm2 OnlyWhenMoreTabs -bool false
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false

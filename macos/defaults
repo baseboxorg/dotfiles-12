@@ -67,6 +67,13 @@ chflags nohidden ~/Library
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 ###############################################################################
+# General
+###############################################################################
+
+# Disable "close windows when quitting an app" (required for iTerm2 3.x).
+defaults write -g NSQuitAlwaysKeepsWindows -bool true
+
+###############################################################################
 # Hot Corners
 ###############################################################################
 
