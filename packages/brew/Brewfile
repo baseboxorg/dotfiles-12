@@ -8,6 +8,7 @@ brew 'git'
 brew 'mas'
 brew 'n'
 brew 'rcm'
+brew 'trash'
 
 # Casks.
 cask '1password'
