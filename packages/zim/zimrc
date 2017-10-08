@@ -5,7 +5,6 @@
 
 # Enabled modules.
 zmodules=(\
-  completion \
   custom \
   directory \
   environment \
@@ -14,9 +13,11 @@ zmodules=(\
   history-substring-search \
   input \
   meta \
+  npm \
   prompt \
   syntax-highlighting \
-  utility
+  utility \
+  completion
 )
 
 # Prompt theme.
