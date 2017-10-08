@@ -15,6 +15,9 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Automatically hide and show the Dock.
 defaults write com.apple.dock autohide -bool true
 
+# Change default size.
+defaults write com.apple.dock tilesize -float 38
+
 # Reorganize the Dock.
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Safari.app"
