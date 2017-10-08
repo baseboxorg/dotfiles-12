@@ -2,6 +2,7 @@
 tap 'thoughtbot/formulae'
 
 # Packages.
+brew 'dockutil'
 brew 'fasd'
 brew 'git'
 brew 'mas'
